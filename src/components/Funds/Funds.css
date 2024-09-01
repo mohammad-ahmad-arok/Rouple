@@ -1,0 +1,49 @@
+section.fundSection {
+    margin-top: 6rem;
+}
+
+.fundsContainer {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.fundSection .eachProcesses.vertical .processTitle {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.fundSection .eachProcesses.vertical p {
+    color: #757575;
+}
+
+.fundSection .eachProcesses {
+    width: 100%;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 0em;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.fundSection .eachProcesses.vertical img {
+    margin: 0px !important;
+}
+
+
+@media screen and (max-width:992px) {
+    .fundSection .eachProcesses.vertical {
+        padding: .6rem;
+        text-align: start;
+    }
+
+    .fundsContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+}

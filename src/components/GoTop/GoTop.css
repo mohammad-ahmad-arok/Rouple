@@ -1,0 +1,62 @@
+.goTopButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--darkText);
+    border: none;
+    font-weight: 600;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px #3d52f247;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+}
+
+.goTopButton.active {
+    display: flex;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: #fff;
+}
+
+.goTopButton:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background: linear-gradient(82.3deg,
+            #3d51f2 10.8%,
+            #5670ef 94.3%);
+    align-items: center;
+}
+
+.goTopButton:hover .svgIcon {
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.goTopButton::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    font-size: 0px;
+}
+
+.goTopButton:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    transition-duration: 0.3s;
+}

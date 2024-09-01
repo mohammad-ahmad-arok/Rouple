@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+:root {
+    --black: #070707;
+    --white: #f7f7f7;
+    --lightgrey: #000020;
+    --darkblue: #d1e4f5;
+    --primarycolor: #3d51f2;
+    --secondarycolor: #5670ef;
+    --lightDark: #000020;
+    --darkText: #0d102c;
+    --linear-white: linear-gradient(45deg, #ffffff0c, #ffffff34);
+    --box-shadow: 1px 2px 16px #00000047, 0px .5px 16px #ffffff29 inset;
+}
+
+[data-theme='dark'] {
+    --black: #070707;
+    --white: #f7f7f7;
+    --lightgrey: #f1f1f1;
+    --darkblue: #0d102c;
+    --primarycolor: #3d51f2;
+    --secondarycolor: #5670ef;
+    --lightDark: #f1f1f1;
+    --darkText: #8388B4;
+    --linear-white: linear-gradient(45deg, #ffffff0c, #ffffff34);
+    --box-shadow: 1px 2px 16px #00000047, 0px .5px 16px #ffffff29 inset;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--darkblue);
+    color: var(--lightgrey);
+}
+
+
+
+section {
+    width: 95%;
+    margin: auto;
+    padding-inline: 6rem;
+}
+
+.gridSection {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sectionPic {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+.sectionPic img {
+    width: 100%;
+}
+
+.darkPara {
+    color: var(--darkText);
+    font-weight: 500;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-30px)
+    }
+}
+
+.bouncepic img {
+    animation: bounce 15s infinite;
+}
+
+@media screen and (max-width:992px) {
+    section {
+        padding-inline: 2rem;
+    }
+    .gridSection{
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+    }
+}

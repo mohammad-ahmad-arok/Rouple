@@ -1,0 +1,39 @@
+.eachProcesses {
+    background: var(--linear-white);
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.eachProcesses.vertical {
+    flex-direction: column;
+}
+
+.eachProcesses img {
+    max-width:80px;
+    margin-right: 2em;
+}
+
+.processTitle {
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width:992px) {
+    .eachProcesses {
+        padding: .8rem 1.2rem;
+        align-items: start;
+    }
+
+    .eachProcesses img {
+        margin-right: 1em;
+    }
+}

@@ -1,0 +1,10 @@
+section.Processes{
+  margin-top: 6rem;
+}
+.processessDesc{
+    order: 0;
+}
+
+.processesPic{
+  order: 1;
+}

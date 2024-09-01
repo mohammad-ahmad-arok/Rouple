@@ -1,0 +1,109 @@
+section.Markets {
+    background: url(/assets/images/hero-image-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 8rem;
+}
+
+section.Markets .eachProcesses {
+    backdrop-filter: blur(3px) !important;
+}
+
+.marketspicSection {
+    background: var(--linear-white);
+    backdrop-filter: blur(3px);
+    box-shadow: var(--box-shadow);
+    border-radius: 16px;
+    padding: 1em;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.marketspicHeader {
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.marketsPicContainer {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 1em;
+    margin: auto;
+}
+
+.marketPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.marketsPicContainer .eachProcesses {
+    width: 100%;
+    justify-content: center;
+    height: 150px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 0em;
+    flex-wrap: wrap;
+    align-content: center;
+    color: var(--white);
+}
+
+.marketsPicContainer .eachProcesses:nth-child(1) {
+    background-color: #FC9531;
+}
+
+.marketsPicContainer .eachProcesses:nth-child(2) {
+    background-color: #4990FF;
+}
+
+.marketsPicContainer .eachProcesses:nth-child(3) {
+    background-color: #3EC2F1;
+}
+
+.marketsPicContainer .eachProcesses:nth-child(4) {
+    background-color: #50D79F;
+}
+
+
+.marketsPicContainer .eachProcesses.vertical img {
+    max-width: 50px !important;
+    margin: 0px !important;
+}
+
+.marketsPicContainer .eachProcesses.vertical .processTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:992px) {
+
+    .marketsPicContainer .eachProcesses.vertical {
+        padding: 0rem;
+    }
+
+    .marketspicHeader {
+        padding: 0em;
+        padding-block: 1em;
+    }
+
+    .marketsPicContainer {
+        padding: 0em;
+    }
+}

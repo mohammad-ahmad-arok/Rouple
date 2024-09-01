@@ -1,0 +1,35 @@
+section.Carousel {
+    margin-block: 2rem;
+    z-index: 800;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 16px;
+    margin-block: 1rem;
+}
+
+.slick-dots li {
+    background: var(--linear-white);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+    background: var(--primarycolor);
+}
+
+.slick-dots li button::before {
+    content: '' !important;
+}
+
+@media screen and (max-width:992px) {
+    .slick-track {
+        gap: 0px;
+    }
+}

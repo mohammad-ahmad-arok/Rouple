@@ -1,0 +1,18 @@
+.dashboardDesc {
+    order: 1;
+}
+
+.dashboardPic {
+    order: 0;
+}
+
+@media screen and (max-width:992px) {
+    .dashboardDesc {
+        order: 0;
+    }
+
+    .dashboardPic {
+        order: 1;
+        margin-top: 2em;
+    }
+}

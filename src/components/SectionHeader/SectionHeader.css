@@ -1,0 +1,15 @@
+.SectionHeader .sectionHeader {
+    font-size: 3.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.SectionHeader .sectionPara {
+    font-size: 1.1rem;
+}
+@media screen and (max-width:992px) {
+    .SectionHeader .sectionHeader {
+        font-size: 2.6rem;
+    }
+
+}
